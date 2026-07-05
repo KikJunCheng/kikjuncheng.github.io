@@ -132,7 +132,7 @@ nav:hover {
 
 .subtitleForProject {
     color: black;
-    font-size:clamp(1rem,3vw,1.5rem);
+    font-size: 24pt;
 }
 
 body.darkmode .subtitleForProject {
@@ -496,21 +496,18 @@ body.darkmode .cv-btn:active {
     color: rgb(68, 124, 255);
 }
 
-@media (max-width:768px) {
-    #Heropage {
-        display: flex;
-        justify-content: space-between;
-        gap: 150px;
-        margin:clamp(20px,4vw,64px);
-        align-items: center;
-    }
+#Heropage {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    margin: 64px 48px;
+    align-items: center;
 }
 
 /* HERO IMAGE CONTAINER */
 #HeroImage {
-    width: min(90vw, 500px);
-    aspect-ratio: 1;
-    height: auto;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     position: relative;
 
@@ -586,7 +583,7 @@ body.darkmode .cv-btn:active {
     width: 100%;
     height: 400px;
     cursor: pointer;
-    margin:clamp(20px,4vw,64px);
+    margin: 64px 48px;
     padding: 2rem;
     border-radius: 20px;
 
@@ -993,9 +990,9 @@ body.darkmode .gauge-text small {
 
 .cards {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
+
 }
 
 .attendance-progress {
@@ -1230,7 +1227,7 @@ body.darkmode .arrow-up span {
 
 .header a {
 
-    font-size:clamp(1rem,3vw,1.5rem);
+    font-size: 24pt;
     text-decoration: none;
     cursor: pointer;
     position: relative;
@@ -1298,7 +1295,7 @@ aside h1 {
 
     display: inline-block;
     text-align: center;
-    font-size:clamp(2rem,6vw,4.5rem);
+    font-size: 72px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: transparent;
     -webkit-text-stroke: rgb(13, 13, 13) 3px;
@@ -1312,7 +1309,7 @@ body.darkmode aside h1 {
 
     display: inline-block;
     text-align: center;
-    font-size:clamp(2rem,6vw,4.5rem);
+    font-size: 72px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: transparent;
     -webkit-text-stroke: white 3px;
@@ -1955,10 +1952,11 @@ section h1:hover::before {
 
 }
 
-.image-list img{
-    width:100%;
-    max-width:400px;
-    height:auto;
+.image-list img {
+    width: 400px;
+    height: 550px;
+    transition: 1s ease-in-out;
+    cursor: pointer;
 }
 
 .image-wrapper .swiper-pagination-bullet {
@@ -2027,25 +2025,21 @@ section h1:hover::before {
     transform: scale(1.03);
 
 }
-
 .image9 img:hover {
     transform: scale(1.03);
 
 }
-
 .image10 img:hover {
     transform: scale(1.03);
 
 }
-
 .image11 img:hover {
     transform: scale(1.03);
 
 }
-
 .image12 img:hover {
     transform: scale(1.03);
-
+    
 }
 
 article {
@@ -2116,8 +2110,8 @@ article h1:hover::before {
 }
 
 body.darkmode .projectCard {
-    width: min(100%, 800px);
-    min-height: 600px;
+    width: 800px;
+    height: 600px;
     margin: 0 50px;
     border-radius: 20px;
     position: relative;
@@ -2250,39 +2244,11 @@ body.darkmode .projectCard::before {
     box-shadow: 0 0 30px #ffd166, 0 0 60px #ffcb45;
 }
 
-@media (max-width:768px) {
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .timeline-items::before {
-        left: 20px;
-    }
-
-    .timeline-dot {
-        left: 13px;
-    }
-
-    .timeline-item {
-        padding-left: 60px !important;
-        padding-right: 0 !important;
-    }
-
-    .timeline-item img {
-        position: relative;
-        width: 100%;
-        height: auto;
-        left: 0;
-        right: 0;
-        margin-top: 20px;
-    }
-
-}
-
-@media (max-width:768px) {
-    .projects {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
 }
 
 body.darkmode .projectNum {
@@ -2448,7 +2414,7 @@ project {
 .projectName {
     text-align: left;
 
-    font-size:clamp(1rem,3vw,1.5rem);
+    font-size: 24pt;
 }
 
 body {
@@ -2977,12 +2943,12 @@ body.darkmode .glass-form {
 /* Header */
 body.darkmode .form-header h2 {
     color: #fff;
-    font-size:clamp(1rem,3vw,1.5rem);
+    font-size: 24pt;
     margin-bottom: 6px;
 }
 
 .form-header h2 {
-    font-size:clamp(1rem,3vw,1.5rem);
+    font-size: 24pt;
     margin-bottom: 6px;
     color: black;
 }
@@ -3561,7 +3527,7 @@ html {
 
 
 .heroTitle {
-    font-size:clamp(2rem,5vw,3.5rem);
+    font-size: 36pt;
     text-align: center;
     font-weight: 500;
     margin-bottom: 24px;
@@ -3588,7 +3554,6 @@ html {
     animation-delay: 2.5s;
     /* appears after typing */
 }
-
 body.darkmode .aboutMeCTA {
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -3772,21 +3737,17 @@ body.darkmode .widgetCard {
     /* subtle edge highlight */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-cite {
-    color: rgba(111, 111, 111, 0.8);
+cite{
+    color: rgba(111,111,111,0.8);
 }
-
 .widgetCard {
     cursor: pointer;
 
-    background: rgba(255, 255, 255, 0.05);
-    /* semi-transparent white for glass effect */
+    background: rgba(255, 255, 255, 0.05); /* semi-transparent white for glass effect */
     border-radius: 20px;
     padding: 30px 40px;
 
-    color: #222;
-    /* dark text for readability */
+    color: #222; /* dark text for readability */
 
     /* Glass effect */
     backdrop-filter: blur(18px);
@@ -3794,13 +3755,10 @@ cite {
 
     /* Soft shadows for depth */
     box-shadow:
-        0 8px 30px rgba(0, 0, 0, 0.15),
-        /* lighter shadow for light background */
-        inset 0 1px 2px rgba(255, 255, 255, 0.2);
-    /* subtle inner highlight */
+        0 8px 30px rgba(0, 0, 0, 0.15), /* lighter shadow for light background */
+        inset 0 1px 2px rgba(255, 255, 255, 0.2); /* subtle inner highlight */
 
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    /* subtle light border */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* subtle light border */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -3810,14 +3768,12 @@ body.darkmode .widgetCard:hover {
         0 12px 28px rgba(0, 0, 0, 0.6),
         inset 0 2px 4px rgba(255, 255, 255, 0.1);
 }
-
 .widgetCard:hover {
     transform: translateY(-5px);
     box-shadow:
         0 12px 28px rgba(0, 0, 0, 0.2),
         inset 0 2px 4px rgba(255, 255, 255, 0.25);
 }
-
 body.darkmode .widgetTopSection h1 {
     font-size: 1.8rem;
     font-weight: 500;
@@ -3875,14 +3831,10 @@ body.darkmode .widgetTopSection h2 {
 
 .value-container {
     display: grid;
-    grid-template-columns: repeat(3, 500px);
-    /* 3 columns, each 500px */
-    grid-template-rows: repeat(2, auto);
-    /* 2 rows, auto height */
-    justify-content: center;
-    /* center the whole grid */
-    gap: 20px;
-    /* spacing between cards */
+    grid-template-columns: repeat(3, 500px); /* 3 columns, each 500px */
+    grid-template-rows: repeat(2, auto);     /* 2 rows, auto height */
+    justify-content: center;                 /* center the whole grid */
+    gap: 20px;                               /* spacing between cards */
     flex-wrap: wrap;
 }
 
@@ -3905,11 +3857,9 @@ body.darkmode .value-card {
 
     transition: transform 0.3s ease, background 0.3s ease;
 }
-
 .value-card {
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.25);
-    /* semi-transparent white */
+    background: rgba(255, 255, 255, 0.25); /* semi-transparent white */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 16px;
@@ -3920,10 +3870,8 @@ body.darkmode .value-card {
     align-items: flex-start;
 
     box-shadow:
-        inset 0 1px 2px rgba(0, 0, 0, 0.1),
-        /* subtle inner shadow */
-        0 6px 18px rgba(0, 0, 0, 0.12);
-    /* soft outer shadow */
+        inset 0 1px 2px rgba(0, 0, 0, 0.1), /* subtle inner shadow */
+        0 6px 18px rgba(0, 0, 0, 0.12); /* soft outer shadow */
 
     transition: transform 0.3s ease, background 0.3s ease;
 }
@@ -3933,54 +3881,43 @@ body.darkmode .value-card:hover {
     transform: translateY(-6px);
     background: rgba(255, 255, 255, 0.3);
 }
-
 .value-card:hover {
     transform: translateY(-6px);
-    background: rgba(255, 255, 255, -0.5);
+    background:rgba(255, 255, 255, -0.5) ;
 }
-
 body.darkmode .value-icon {
     font-size: 28px;
     margin-bottom: 12px;
     color: rgba(255, 255, 255, 0.85);
 }
-
 .value-icon {
     font-size: 28px;
     margin-bottom: 12px;
     color: #333;
-    background: rgba(255, 255, 255, -0.7);
-    /* semi-transparent light background */
+    background: rgba(255, 255, 255, -0.7); /* semi-transparent light background */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-
-    border-radius: 10px;
-    /* pill / rounded rectangle shape */
+    
+    border-radius: 10px; /* pill / rounded rectangle shape */
     padding: 5px 10px;
     display: inline-block;
 
     /* 3D effect */
     box-shadow:
-        2px 2px 6px rgba(0, 0, 0, 0.25),
-        /* bottom-right shadow */
-        -2px -2px 6px rgba(255, 255, 255, 0.3);
-    /* top-left highlight */
+        2px 2px 6px rgba(0, 0, 0, 0.25), /* bottom-right shadow */
+        -2px -2px 6px rgba(255, 255, 255, 0.3); /* top-left highlight */
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 body.darkmode .value-icon {
     font-size: 28px;
     margin-bottom: 12px;
-    color: #f0f0f0;
-    /* light icon for dark background */
-
-    background: rgba(30, 30, 30, 0.6);
-    /* dark semi-transparent background */
+    color: #f0f0f0; /* light icon for dark background */
+    
+    background: rgba(30, 30, 30, 0.6); /* dark semi-transparent background */
 
 
-    border-radius: 10px;
-    /* pill / rounded rectangle shape */
+    border-radius: 10px; /* pill / rounded rectangle shape */
     padding: 5px 10px;
     display: inline-block;
 
@@ -3996,8 +3933,7 @@ body.darkmode .value-card h3 {
     margin: 0 0 10px 0;
     color: rgba(255, 255, 255, 0.9);
 }
-
-.value-card h3 {
+ .value-card h3 {
     font-size: 21px;
     font-weight: 600;
     margin: 0 0 10px 0;
@@ -4012,7 +3948,6 @@ body.darkmode .value-card p {
     color: rgba(255, 255, 255, 0.85);
     margin: 0;
 }
-
 .value-card p {
     font-size: 18px;
     font-weight: 300;
@@ -4191,67 +4126,4 @@ body.darkmode #bibleVerse {
 #bibleVerse {
     color: #333;
     font-size: 18pt;
-}
-/* Tablets */
-@media (max-width:1024px){
-
-#Heropage{
-    gap:60px;
-}
-
-.projectCard{
-    width:90%;
-}
-
-.cards{
-    flex-wrap:wrap;
-}
-
-}
-
-/* Phones */
-@media (max-width:768px){
-
-.navbar{
-    flex-direction:column;
-    gap:20px;
-}
-
-.nav-left,
-.nav-right{
-    gap:20px;
-}
-
-#Heropage{
-    flex-direction:column;
-    text-align:center;
-}
-
-#HeroImage{
-    width:80vw;
-}
-
-.projects{
-    flex-direction:column;
-}
-
-.interests{
-    flex-direction:column;
-}
-
-.cards{
-    flex-direction:column;
-}
-
-.ctaBtns{
-    flex-direction:column;
-    gap:20px;
-}
-
-.footer-container{
-    flex-direction:column;
-    height:auto;
-    padding:30px;
-}
-
 }
